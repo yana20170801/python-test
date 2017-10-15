@@ -10,7 +10,7 @@ script:
   - echo ${TEST_ACCOUNT}
   - echo ${TEST_ACCOUNT2}
   - echo ${TEST_USER}
-  - echo ${TEST_ACCOUNT} | base64
+  - echo ${TEST_ACCOUNT} | base64 | base64 -d
 
 after_success:
   - python hello.py ${TEST_ACCOUNT} ${TEST_ACCOUNT2}
