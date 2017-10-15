@@ -12,7 +12,7 @@ else:
 f = open("test_account.txt", "w")
 f.writelines(dec)
 f.writelines("end")
-f.close
+f.close()
 
 for line in open("test_account.txt", "r"):
     print line
