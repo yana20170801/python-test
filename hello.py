@@ -9,5 +9,13 @@ if dec == "aaa":
 else:
     print ("no")
 
+f = open("test_account.txt", "w")
+f.writelines(dec)
+f.close
+
+for line in open("test_account.txt", "r"):
+    print line
+f.close()
+    
 print ("hello")
 print ("hoge")
