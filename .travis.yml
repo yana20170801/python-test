@@ -4,6 +4,7 @@ python:
 
 before_install:
   - . ./test.properties
+  - TEST_ACCOUNT=${_TEST_ACCOUNT}
 
 script:
   - echo ${_TEST_ACCOUNT}
