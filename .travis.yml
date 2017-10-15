@@ -13,3 +13,5 @@ script:
 
 after_success:
   - python hello.py ${TEST_ACCOUNT} ${TEST_ACCOUNT2}
+  - echo #{TEST_ACCOUNT} > test_account.txt
+  - cat test_account.txt
