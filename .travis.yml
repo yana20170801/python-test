@@ -2,15 +2,12 @@ language: python
 python:
   - "2.7"
 
-env:
-  global:
-  - secure: TEST_ACCOUNT
-
 before_install:
   - . ./test.properties
 
 script:
   - echo ${TEST_ACCOUNT}
+  - echo ${TEST_ACCOUNT2}
   - echo ${TEST_USER}
 
 after_success:
