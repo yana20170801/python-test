@@ -3,7 +3,7 @@ python:
   - "2.7"
 
 before_install:
-  - . ./test.ptoperties
+  - . ./test.properties
 
 script:
   - echo ${TEST_ACCOUNT}
