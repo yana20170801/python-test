@@ -1,6 +1,6 @@
 import sys
 
-args = sys.args
+args = sys.argv
 
 print args
 print ("hello")
