@@ -4,7 +4,6 @@ python:
 
 before_install:
   - . ./test.properties
-  - TEST_ACCOUNT=${_TEST_ACCOUNT}
 
 script:
   - echo ${_TEST_ACCOUNT}
@@ -13,4 +12,4 @@ script:
   - echo ${TEST_USER}
 
 after_success:
-  - python hello.py
+  - python hello.py ${TEST_ACCOUNT} ${TEST_ACCOUNT2}
