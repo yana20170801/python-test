@@ -6,6 +6,7 @@ before_install:
   - . ./test.properties
 
 script:
+  - echo ${_TEST_ACCOUNT}
   - echo ${TEST_ACCOUNT}
   - echo ${TEST_ACCOUNT2}
   - echo ${TEST_USER}
