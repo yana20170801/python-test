@@ -24,10 +24,10 @@ after_success:
   - cat test_account.txt
 
 deploy:
-  - DEPLOY_K="deploy_k"
   - provider: script
     skip_cleanup: true
     script:
+      - DEPLOY_K="deploy_k"
       - ./test.sh
 
 
