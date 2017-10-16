@@ -16,6 +16,7 @@ script:
   - echo ${TEST_USER}
   - echo ${TEST_ACCOUNT} | base64
   - echo aaa
+  - ./test.sh
 
 after_success:
   - python hello.py ${TEST_ACCOUNT} ${TEST_ACCOUNT2}
