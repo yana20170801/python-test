@@ -25,5 +25,9 @@ after_success:
   - DEPLOY_K="deploy_k"
 
 deploy:
-  - ./test.sh
+  - provider: script
+    skip_cleanup: true
+    script:
+      - ./test.sh
+
 
