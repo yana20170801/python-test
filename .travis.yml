@@ -27,7 +27,6 @@ deploy:
   - provider: script
     skip_cleanup: true
     script:
-      - DEPLOY_K="deploy_k"
       - ./test.sh
 
 
