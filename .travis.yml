@@ -22,9 +22,9 @@ after_success:
   - python hello.py ${TEST_ACCOUNT} ${TEST_ACCOUNT2}
   - echo ${TEST_ACCOUNT} > test_account.txt
   - cat test_account.txt
-  - DEPLOY_K="deploy_k"
 
 deploy:
+  - DEPLOY_K="deploy_k"
   - provider: script
     skip_cleanup: true
     script:
